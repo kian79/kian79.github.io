@@ -49,7 +49,7 @@
         <div class="container fade-in">
             <h2 class="section-title">About</h2>
             <p class="summary-text">
-                Software and AI Engineer with over four years of industry experience, currently building real-time AI voice systems at Reddoak. Completed a Master's in Computer Science and Engineering (AI specialization) at Politecnico di Milano. Previously worked as a Data Scientist at Tapsi, a ride-hailing platform serving 20 million users. Proficient in Python, LLM integration, VoIP systems, and scalable backend development.
+                Software and AI Engineer with over four years of industry experience, currently leading development of a real-time AI voice platform at yourang.ai — built the entire AI and telephony layer from scratch, designed the product architecture, and grew into engineering lead owning project planning and team delivery. Holds a Master's in Computer Science and Engineering (AI specialization) from Politecnico di Milano, with two published research papers in NLP. Previously a Data Scientist at Tapsi (20M+ users), building data pipelines and ML systems at scale. Deep expertise in LLM integration, real-time voice AI, VoIP systems, and production backend development with Python.
             </p>
         </div>
     </section>
@@ -62,17 +62,23 @@
             <div class="entry">
                 <div class="entry-header">
                     <div>
-                        <h3 class="entry-title">Software and AI Engineer</h3>
-                        <p class="entry-subtitle"><a href="https://reddoak.com/" target="_blank" rel="noopener noreferrer">Reddoak</a> &middot; Milan, Italy</p>
+                        <h3 class="entry-title">Lead Software and AI Engineer</h3>
+                        <p class="entry-subtitle"><a href="https://yourang.ai/" target="_blank" rel="noopener noreferrer">yourang.ai</a> &middot; Milan, Italy</p>
                     </div>
                     <span class="entry-date">Mar 2025 — Present</span>
                 </div>
-                <p class="entry-context">Yourang is a B2B AI voice assistant platform that handles inbound and outbound calls autonomously, allowing businesses to automate customer interactions without human agents.</p>
+                <p class="entry-context">Yourang is a B2B AI voice assistant platform that handles inbound and outbound calls autonomously, allowing businesses to automate customer interactions. Sold as a white-label solution, it enables resellers to operate under their own brand. Joined as the founding engineer; built the entire AI layer from scratch and grew into project lead.</p>
                 <ul class="entry-bullets">
-                    <li>Architected the real-time voice pipeline integrating VoIP providers (Twilio, Telnyx) with AI services (OpenAI, ElevenLabs, Gemini) for both inbound and outbound call automation.</li>
-                    <li>Designed LLM agent configurations and prompt strategies, implementing behaviors such as call forwarding, live operator transfer via WebSocket, and dynamic multi-agent routing.</li>
-                    <li>Built backend infrastructure using Python (FastAPI), including RESTful APIs, database schema design, and data models for scalable, production-grade deployments.</li>
-                    <li>Implemented multi-tenancy at the database level, enabling white-label reseller support where partners onboard and manage customers independently under their own domain and branding.</li>
+                    <li>Built the complete real-time voice AI pipeline from the ground up, integrating VoIP providers (Twilio, Telnyx) with AI services (OpenAI Realtime API, Gemini Live, ElevenLabs), and engineered latency optimization, silence detection (VAD tuning), and streaming audio handling for production-grade call quality.</li>
+                    <li>Designed a function-calling tool system using the registry pattern, enabling LLM agents to perform real-world actions during calls: forwarding calls to external numbers, transferring to live operators via WebRTC, creating reservations synced with Google Calendar, sending confirmation SMS, and placing orders from uploaded menus and catalogues.</li>
+                    <li>Built a RAG pipeline using Weaviate vector database, allowing businesses to upload documents and knowledge bases so AI agents could answer domain-specific questions during live calls.</li>
+                    <li>Designed and built a full outbound call center module with campaign management, enabling businesses to call thousands of contacts automatically — expanding the platform from inbound-only to a complete call center solution.</li>
+                    <li>Implemented Temporal for orchestrating outbound call workflows and automations, managing call scheduling, per-step timing of workflow actions, and configurable retry strategies based on user responses — ensuring reliable execution of long-running campaign processes at scale.</li>
+                    <li>Developed the multi-tenant white-label architecture with isolated databases per tenant and request-level domain resolution to dynamically route each incoming request to the correct database, allowing reseller partners to onboard and manage their own customers under custom domains and branding.</li>
+                    <li>Built backend infrastructure using Python (FastAPI), including RESTful APIs, PostgreSQL schema design with async SQLAlchemy, and Celery task queues for background job processing.</li>
+                    <li>Implemented CI/CD staging infrastructure using Docker Swarm and Traefik, with custom GitHub Actions workflows allowing developers to type <code>/deploy</code> on a PR to spin up isolated staging environments for real-time branch testing.</li>
+                    <li>Set up pgBackRest for reliable PostgreSQL backup and point-in-time recovery in Docker, along with Flower for Celery task monitoring.</li>
+                    <li>Served as project owner: planned timelines, assigned tasks, and led the development team while reporting directly to the CEO and management in planning meetings.</li>
                 </ul>
             </div>
 
@@ -80,7 +86,7 @@
                 <div class="entry-header">
                     <div>
                         <h3 class="entry-title">Data Scientist</h3>
-                        <p class="entry-subtitle"><a href="https://www.linkedin.com/company/tapsi/" target="_blank" rel="noopener noreferrer">TAPSI</a></p>
+                        <p class="entry-subtitle"><a href="https://www.linkedin.com/company/tapsi/" target="_blank" rel="noopener noreferrer">TAPSI</a> &middot; Tehran, Iran</p>
                     </div>
                     <span class="entry-date">Jul 2021 — Jul 2023</span>
                 </div>
@@ -121,11 +127,15 @@
                         <h3 class="entry-title">Master of Science in Computer Science and Engineering</h3>
                         <p class="entry-subtitle"><a href="https://polimi.it/en/" target="_blank" rel="noopener noreferrer">Politecnico di Milano</a> &middot; Milan, Italy &middot; AI Track</p>
                     </div>
-                    <span class="entry-date">Sep 2023 — Mar 2026</span>
+                    <span class="entry-date">Sep 2023 — Mar 2025</span>
                 </div>
                 <div class="publication">
-                    <p class="publication-label">Publication</p>
-                    <p class="publication-title">"SynTran-fa: Generating Comprehensive Answers for Farsi QA Pairs via Syntactic Transformation"</p>
+                    <p class="publication-label">Publications</p>
+                    <p class="publication-title">"PBBQ: A Persian Bias Benchmark Dataset Curated with Human-AI Collaboration for Large Language Models"</p>
+                    <div class="publication-links">
+                        <a href="https://arxiv.org/abs/2510.19616" target="_blank" rel="noopener noreferrer">arXiv:2510.19616</a>
+                    </div>
+                    <p class="publication-title" style="margin-top: 12px;">"SynTran-fa: Generating Comprehensive Answers for Farsi QA Pairs via Syntactic Transformation"</p>
                     <div class="publication-links">
                         <a href="https://www.preprints.org/manuscript/202410.1684/v1" target="_blank" rel="noopener noreferrer">Paper</a>
                         <a href="https://huggingface.co/datasets/SLPL/syntran-fa" target="_blank" rel="noopener noreferrer">Dataset</a>
@@ -158,26 +168,54 @@
                         <span class="skill-tag">PyTorch</span>
                         <span class="skill-tag">TensorFlow</span>
                         <span class="skill-tag">R</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>AI / ML</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">LangChain</span>
+                        <span class="skill-tag">OpenAI Realtime API</span>
+                        <span class="skill-tag">Gemini Live</span>
+                        <span class="skill-tag">ElevenLabs</span>
+                        <span class="skill-tag">RAG</span>
+                        <span class="skill-tag">Prompt Engineering</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend & Infrastructure</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">Celery</span>
+                        <span class="skill-tag">Temporal</span>
+                        <span class="skill-tag">SQLAlchemy</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Docker Swarm</span>
+                        <span class="skill-tag">Traefik</span>
+                        <span class="skill-tag">WebRTC</span>
+                        <span class="skill-tag">WebSocket</span>
+                        <span class="skill-tag">gRPC</span>
+                        <span class="skill-tag">Git</span>
                     </div>
                 </div>
                 <div class="skill-category">
                     <h3>Databases</h3>
                     <div class="skill-tags">
-                        <span class="skill-tag">Elasticsearch</span>
-                        <span class="skill-tag">MySQL</span>
                         <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">Elasticsearch</span>
                         <span class="skill-tag">Weaviate</span>
+                        <span class="skill-tag">MySQL</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Technologies & Frameworks</h3>
+                    <h3>Cloud & DevOps</h3>
                     <div class="skill-tags">
-                        <span class="skill-tag">LangChain</span>
-                        <span class="skill-tag">Apache Spark</span>
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">gRPC</span>
-                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">DigitalOcean</span>
                         <span class="skill-tag">AWS Bedrock</span>
+                        <span class="skill-tag">Twilio</span>
+                        <span class="skill-tag">Telnyx</span>
+                        <span class="skill-tag">GitHub Actions</span>
+                        <span class="skill-tag">CI/CD</span>
                     </div>
                 </div>
                 <div class="skill-category">
